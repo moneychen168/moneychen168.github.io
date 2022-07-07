@@ -13,11 +13,17 @@ const width = screen.width;
         <div class="flex w-full flex-col md:flex-row">
             <div class="w-full md:w-1/2">
                 <Typing
-                    text="Anya Forger"
+                    text="moneychen's duck house"
                     @done="step++"
                     class="mb-2 block text-2xl sm:text-3xl lg:text-4xl"
                 />
-                <Typing v-if="step > 0" @done="step++" :text="titles.join(', ')" :speed="60" />
+                <Typing
+                    v-if="step > 0"
+                    @done="step++"
+                    :text="titles.join(', ')"
+                    :speed="60"
+                    class="text-4xl"
+                />
                 <a
                     v-if="step > 1"
                     class="mt-8 flex items-center text-lg text-gray-500 transition-all hover:text-gray-700"
@@ -37,7 +43,7 @@ const width = screen.width;
                     <Typing v-if="step > 2" @done="step++" text="Instagram" :speed="60" />
                 </a>
             </div>
-            <div class="w-full overflow-hidden drop-shadow-2xl">
+            <div class="w-full drop-shadow-2xl">
                 <transition
                     enter-active-class="duration-200 ease-out"
                     enter-from-class="transform opacity-0 translate-y-12 md:translate-x-12"
@@ -49,7 +55,7 @@ const width = screen.width;
                     <img
                         v-show="step > (width >= 768 ? 0 : 3)"
                         :src="pic.casual_large"
-                        class="-translate-y-0 scale-[200%] md:-translate-y-20 md:scale-150 lg:-translate-y-32 lg:scale-125"
+                        class="translate-x-200 -translate-y-0"
                     />
                 </transition>
             </div>

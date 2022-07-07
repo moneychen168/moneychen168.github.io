@@ -2,7 +2,7 @@ const pic = {
     uniform: "https://spy-family.net/assets/img/common/header_bottomimg_3.png",
     icecream: "https://spy-family.net/assets/img/common/header_bottomimg_3_family.png",
     uniform_large: "https://spy-family.net/assets/img/top/chara_anya_1.png",
-    casual_large: "https://spy-family.net/assets/img/top/chara_anya_2.png",
+    casual_large: "https://imgur.dcard.tw/7cevvivh.jpg",
     avatars: [],
 };
 
@@ -35,7 +35,7 @@ pic.avatars.push(
     "https://spy-family.net/assets/img/special/episode12/06.png",
 );
 
-const titles = ["First-Grade Student", "Test Subject 007", "Telepath"];
+const titles = ["年輕人你要不要來點\n呱呱樂"];
 
 const about = [
     "My name is Anya Forger. I am 6 years old now!",
